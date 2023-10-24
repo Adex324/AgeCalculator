@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="grid">
+  <div class="top-side">
+<form action="/">
+ <h4 class="header-texts">Day</h4> 
+  <input class="small-box"  type="text" placeholder="DD" id="day" maxlength="2"  >
+  <span class="day-text"></span>
+</form>
+<form action="/">
+  <h4 class="header-texts"> Month</h4> 
+  <input class="small-box"  type="text" placeholder="MM" id="dateM" maxlength="2"  >
+  <span class="month-text"></span>
+</form>
+<form action="/">
+  <h4 class="header-texts">  Year</h4> 
+  <input class="small-box"  type="text" placeholder=" YYYY" id="dateY" maxlength="4" >
+  <span class="year-text"></span> 
+</form>
+</div>
+<div class="hoz">
+  <hr class="rule">
+ <button class="image" onclick="calculateAge()"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44" onclick="calculateAge()"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg></button>
+</div>
+<div class="bottom-side">
+  <div class="dates">
+  <h1 class="dashes" id="year-val">--</h1><h1 class="big-texts" >years</h1>
+</div>
+<div class="dates">
+  <h1 class="dashes" id="month-val">--</h1><h1 class="big-texts" >months</h1>
+</div>
+<div class="dates">
+  <h1 class="dashes" id="day-val">--</h1><h1 class="big-texts"  >days</h1>
+</div>
+</div>
+</div>
+</div>
+ 
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
